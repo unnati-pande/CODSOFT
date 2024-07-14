@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.1)), url('landingpage.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+  background: -webkit-linear-gradient(rgb(242, 255, 61), #fddb00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(180, 174, 8);
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width:90%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color:rgb(109, 112, 42); 
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn :hover{
+    background-color: #c6c24d;
+    color: #261d0b;
+}
+.btn:active {
+    background-color:#c6c24d;
+  }
+.content{
+    margin-top: 14%;
+    color: white;
+    max-width: 620px;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 0px;
+    margin-bottom: 10px;
+}
+.content h3{
+    font-weight: 600;
+    line-height: 75px;
+    margin-bottom: 20px;
+}
+.content p{
+    line-height: 1.5rem;
+}
+.content form{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.content form input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.content form .btn{
+    font-size: 15px;
+    padding: 10px 30px;
+}
+/*----footer---*/
+.footerContainer{
+    width: 100%;
+    padding: 20px 200px 20px;
+    color: white;
+    margin-top: 70px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 6px;
+    background-color: #ffffff;
+    margin: 6px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.25em;
+    color: #261d0b;
+    opacity: 0.9;
+}
+.socialIcons a:hover i{
+    color: #ffffff;
+    transition: 0.5s;
+}
+.footerBottom{
+    background-color:  #423e1f;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
